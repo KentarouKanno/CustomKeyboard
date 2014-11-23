@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qdk-WU-ECQ">
+                                <rect key="frame" x="185" y="190" width="230" height="30"/>
+                                <color key="backgroundColor" red="0.69293654979999997" green="0.80594009629999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Ea0-BU-aHs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Im0-yR-tVe"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GEH-Kv-HNd">
+                                <rect key="frame" x="185" y="101" width="230" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.96083653040000006" blue="0.55803592859999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="XI1-0g-3FI"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZTA-ae-oQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="N8u-Vu-2cJ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Type URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8O-7J-P9T">
+                                <rect key="frame" x="158" y="66" width="153" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="MX6-DR-a6t"/>
+                                    <constraint firstAttribute="height" constant="21" id="Zu1-sd-CmI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Type Custom Number Pad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKX-jh-Q8B">
+                                <rect key="frame" x="158" y="161" width="282" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="01D-no-4TI"/>
+                                    <constraint firstAttribute="width" constant="282" id="mI5-Sh-F7L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A8O-7J-P9T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="44S-jX-1B2"/>
+                            <constraint firstAttribute="centerX" secondItem="qdk-WU-ECQ" secondAttribute="centerX" id="E6W-Z9-gjz"/>
+                            <constraint firstAttribute="centerX" secondItem="hKX-jh-Q8B" secondAttribute="centerX" constant="1" id="IF8-2r-Gzw"/>
+                            <constraint firstItem="hKX-jh-Q8B" firstAttribute="top" secondItem="GEH-Kv-HNd" secondAttribute="bottom" constant="30" id="JGt-mr-Ohe"/>
+                            <constraint firstItem="GEH-Kv-HNd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="RQW-1U-euO"/>
+                            <constraint firstItem="qdk-WU-ECQ" firstAttribute="top" secondItem="GEH-Kv-HNd" secondAttribute="bottom" constant="59" id="ShB-pj-Ioy"/>
+                            <constraint firstAttribute="centerX" secondItem="GEH-Kv-HNd" secondAttribute="centerX" id="cLa-d7-Ok0"/>
+                            <constraint firstAttribute="centerX" secondItem="A8O-7J-P9T" secondAttribute="centerX" constant="65.5" id="uxP-Po-8st"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="qdk-WU-ECQ" id="whg-n4-qlR"/>
+                        <outlet property="textField2" destination="qdk-WU-ECQ" id="mWO-ah-2VT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
